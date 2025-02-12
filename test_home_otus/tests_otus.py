@@ -27,6 +27,11 @@ from src.rectangle import *
 #     my_square = Square(10)
 #     return my_square.area()
 # print(square_area())
+#
+# def square_perimeter():
+#     my_square = Square(5)
+#     return my_square.perimeter()
+# print(square_perimeter())
 
 # def rectangle_area():
 #     my_rectangle = Rectangle(5, 10)
@@ -38,9 +43,4 @@ from src.rectangle import *
 #     return my_rectangle.perimeter()
 # print(rectangle_perimeter())
 
-
-# def square_perimeter():
-#     my_square = Square(5)
-#     return my_square.perimeter()
-# print(square_perimeter())
 
