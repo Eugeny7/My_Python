@@ -1,7 +1,9 @@
 import  math
+from src.figure import *
 
-class Triangle():
+class Triangle(Figure):
     def __init__(self, side_a, side_b, side_c):
+        super().__init__()
         if side_a <= 0 or side_b <= 0 or side_c <=0:
             raise ValueError(f'Creating a figure: "triangle" impossible')
         self.side_a = side_a

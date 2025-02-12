@@ -1,7 +1,9 @@
 import math
+from src.figure import *
 
-class Circle():
+class Circle(Figure):
     def __init__(self, radius):
+        super().__init__()
         if radius <= 0:
             raise ValueError(f'It is impossible to create a figure: circle')
         self.radius = radius
