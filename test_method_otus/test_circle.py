@@ -7,7 +7,7 @@ import pytest
 
 @pytest.mark.parametrize('radius, area, perimeter, name',
                          [(10, 314.16, 62.83, 'Circle')])
-def test_circle_area_per_name(radius, area, perimeter, name):
+def test_circle_ar_per_name(radius, area, perimeter, name):
     circle = Circle(radius)
     assert circle.area() == area
     assert circle.perimeter() == perimeter
@@ -27,8 +27,8 @@ def test_circle_add_area(radius, side_a, side_b, side_c):
 
 
 @pytest.mark.parametrize('radius, side_a, side_b, side_c',
-                         [(-10, -13, -14, -15),
-                          (0, 0, 0, 0)])
+                         [(-10, 13, 14, 15),
+                          (0, 888, 999, 1000)])
 def test_circle_add_area_negative(radius, side_a, side_b, side_c):
     with pytest.raises(ValueError):
         circle = Circle(radius)

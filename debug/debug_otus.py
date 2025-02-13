@@ -8,20 +8,20 @@ from src.rectangle import *
 #     return my_triangle.perimeter()
 # print(triangle_perimeter())
 #
-# def triangle_area():
-#     my_triangle = Triangle(13, 14, 15)
-#     return my_triangle.area()
-# print(triangle_area())
+def triangle_area():
+    my_triangle = Triangle(32, 23, 123)
+    return my_triangle.area()
+print(triangle_area())
 #
 # def circle_area():
 #     my_circle = Circle(10)
 #     return my_circle.area()
 # print(circle_area())
 #
-def circle_perimeter():
-    my_circle = Circle(10)
-    return my_circle.perimeter()
-print(circle_perimeter())
+# def circle_perimeter():
+#     my_circle = Circle(10)
+#     return my_circle.perimeter()
+# print(circle_perimeter())
 #
 # def square_area():
 #     my_square = Square(10)
@@ -45,7 +45,7 @@ print(circle_perimeter())
 
 # def add_area():
 #     my_square = Square(10)
-#     my_triangle = Triangle(13, 14, 15)
+#     my_triangle = Triangle(23, 14, 15)
 #     return my_triangle.add_area(my_square)
 # print(add_area())
 

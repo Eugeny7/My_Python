@@ -1,4 +1,7 @@
 import math
+
+from urllib3.util.wait import select_wait_for_socket
+
 from src.figure import *
 
 
@@ -13,8 +16,12 @@ class Triangle(Figure):
         self.name = "Triangle"
 
     def area(self):
+        if (self.side_a + self.side_b <= self.side_c) or \
+        (self.side_b + self.side_c <= self.side_a) or \
+        (self.side_a + self.side_c <= self.side_b):
+            raise ValueError(f'It is impossible to comb the square root from a negative number')
         p = (self.side_a + self.side_b + self.side_c) / 2
-        return math.sqrt(p * (p - self.side_a) * (p - self.side_b) * (p - self.side_c))
+        return int(math.sqrt(p * (p - self.side_a) * (p - self.side_b) * (p - self.side_c)))
 
     def perimeter(self):
         return self.side_a + self.side_b + self.side_c
