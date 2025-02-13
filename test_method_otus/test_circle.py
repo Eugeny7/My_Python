@@ -13,8 +13,9 @@ def test_circle_area_per_name(radius, area, perimeter, name):
     assert circle.perimeter() == perimeter
     assert circle.name == name
 
+
 @pytest.mark.parametrize('radius, side_a, side_b, side_c',
-                         [(10, 13, 14, 15 )])
+                         [(10, 13, 14, 15)])
 def test_circle_add_area(radius, side_a, side_b, side_c):
     circle = Circle(radius)
     triangle = Triangle(side_a, side_b, side_c)
@@ -24,8 +25,9 @@ def test_circle_add_area(radius, side_a, side_b, side_c):
     assert circle.add_area(square) == circle.area() + square.area()
     assert circle.add_area(rectangle) == circle.area() + rectangle.area()
 
+
 @pytest.mark.parametrize('radius, side_a, side_b, side_c',
-                         [(-10, -13, -14, -15 ),
+                         [(-10, -13, -14, -15),
                           (0, 0, 0, 0)])
 def test_circle_add_area_negative(radius, side_a, side_b, side_c):
     with pytest.raises(ValueError):
