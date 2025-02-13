@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81cd7146-bd51-4400-aa7c-c7a0eb238cce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/сircle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests_otus.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_otus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_method_otus/test_circle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_method_otus/test_rectangle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_method_otus/test_square.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_method_otus/test_triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/square.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сircle.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/сircle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_home_otus/tests_otus.py" beforeDir="false" afterPath="$PROJECT_DIR$/debug/debug_otus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/registr.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium/registr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium/first_selenium.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,45 +43,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
-    "Notification.DoNotAsk-Vcs Important Messages": "true",
-    "Python tests.Python tests for test_registr.test_registration.executor": "Run",
-    "Python tests.Python tests in test_registr.py.executor": "Run",
-    "Python tests.pytest for test_one.test_title.executor": "Run",
-    "Python tests.pytest for test_one.test_url.executor": "Run",
-    "Python tests.pytest for tests_otus.test_triangle.executor": "Run",
-    "Python tests.pytest in tests_otus.py.executor": "Run",
-    "Python.Find_Test.executor": "Run",
-    "Python.Tes_one.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.Test_one.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.registr.executor": "Run",
-    "Python.test_registr.executor": "Run",
-    "Python.tests_otus.executor": "Run",
-    "Python.triangle.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/evgenijpuckov/PycharmProjects/Test_my",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
+    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_registr.test_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_registr.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_circle.test_circle_add_area.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_circle.test_circle_add_area_negative.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_circle.test_circle_area.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_circle.test_circle_area_per_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_circle.test_circle_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_method_otus.test_circle.test_circle_area_per_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_one.test_title.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_one.test_url.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for tests_otus.test_triangle.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in tests_otus.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Find_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Tes_one.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test_one.executor&quot;: &quot;Run&quot;,
+    &quot;Python.debug_otus.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rectangle.executor&quot;: &quot;Run&quot;,
+    &quot;Python.registr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_registr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests_otus.executor&quot;: &quot;Run&quot;,
+    &quot;Python.triangle.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/evgenijpuckov/PycharmProjects/Test_my&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_home_otus" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.tests_otus">
-    <configuration name="tests_otus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_circle.test_circle_area_per_name">
+    <configuration name="debug_otus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Test_my" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,11 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/debug" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests_otus.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/debug/debug_otus.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,86 +116,81 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="triangle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Test_my" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/triangle.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_one.test_title" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_circle.test_circle_add_area" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Test_my" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_method_otus" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_one.test_title&quot;" />
+      <option name="_new_target" value="&quot;test_circle.test_circle_add_area&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests_otus.test_triangle" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_circle.test_circle_add_area_negative" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Test_my" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_method_otus" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests_otus.test_triangle&quot;" />
+      <option name="_new_target" value="&quot;test_circle.test_circle_add_area_negative&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in tests_otus.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_circle.test_circle_area_per_name" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Test_my" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_method_otus" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests_otus.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_circle.test_circle_area_per_name&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_method_otus.test_circle.test_circle_area_per_name" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Test_my" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_method_otus.test_circle.test_circle_area_per_name&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tests_otus" />
-        <item itemvalue="Python.triangle" />
-        <item itemvalue="Python tests.pytest for tests_otus.test_triangle" />
-        <item itemvalue="Python tests.pytest in tests_otus.py" />
-        <item itemvalue="Python tests.pytest for test_one.test_title" />
+        <item itemvalue="Python tests.pytest for test_circle.test_circle_area_per_name" />
+        <item itemvalue="Python.debug_otus" />
+        <item itemvalue="Python tests.pytest for test_circle.test_circle_add_area" />
+        <item itemvalue="Python tests.pytest for test_circle.test_circle_add_area_negative" />
+        <item itemvalue="Python tests.pytest for test_method_otus.test_circle.test_circle_area_per_name" />
       </list>
     </recent_temporary>
   </component>

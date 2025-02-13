@@ -14,14 +14,14 @@ from src.rectangle import *
 # print(triangle_area())
 #
 # def circle_area():
-#     my_circle = Circle(20)
+#     my_circle = Circle(10)
 #     return my_circle.area()
 # print(circle_area())
 #
-# def circle_perimeter():
-#     my_circle = Circle(20)
-#     return my_circle.perimeter()
-# print(circle_perimeter())
+def circle_perimeter():
+    my_circle = Circle(10)
+    return my_circle.perimeter()
+print(circle_perimeter())
 #
 # def square_area():
 #     my_square = Square(10)
@@ -42,5 +42,11 @@ from src.rectangle import *
 #     my_rectangle = Rectangle(5, 10)
 #     return my_rectangle.perimeter()
 # print(rectangle_perimeter())
+
+# def add_area():
+#     my_square = Square(10)
+#     my_triangle = Triangle(13, 14, 15)
+#     return my_triangle.add_area(my_square)
+# print(add_area())
 
 
