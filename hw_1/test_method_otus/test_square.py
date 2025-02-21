@@ -1,7 +1,3 @@
-from src.сircle import *
-from src.square import *
-from src.rectangle import *
-from src.triangle import *
 import pytest
 
 

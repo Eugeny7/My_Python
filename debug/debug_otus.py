@@ -1,8 +1,3 @@
-from src.triangle import *
-from src.сircle import *
-from src.square import *
-from src.rectangle import *
-
 # def triangle_perimeter():
 #     my_triangle = Triangle(13, 14 , 15)
 #     return my_triangle.perimeter()

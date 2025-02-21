@@ -1,4 +1,4 @@
-from src.figure import *
+from hw_1.src.figure import *
 
 
 class Rectangle(Figure):

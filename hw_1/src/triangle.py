@@ -1,8 +1,6 @@
 import math
 
-from urllib3.util.wait import select_wait_for_socket
-
-from src.figure import *
+from hw_1.src.figure import *
 
 
 class Triangle(Figure):
