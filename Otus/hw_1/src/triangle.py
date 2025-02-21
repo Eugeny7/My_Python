@@ -1,7 +1,5 @@
 import math
 
-from hw_1.src.figure import *
-
 
 class Triangle(Figure):
     def __init__(self, side_a, side_b, side_c):

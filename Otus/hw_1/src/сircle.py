@@ -1,5 +1,4 @@
 import math
-from hw_1.src.figure import *
 
 
 class Circle(Figure):

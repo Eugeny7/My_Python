@@ -11,6 +11,8 @@ venv.bak/
 # Tests
 .pytest_cache/
 
-.books.csv/
+books.csv
 
-.users.json/
+users.json
+
+.debug/

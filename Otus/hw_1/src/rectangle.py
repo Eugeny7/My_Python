@@ -1,6 +1,3 @@
-from hw_1.src.figure import *
-
-
 class Rectangle(Figure):
     def __init__(self, side_a, side_b):
         super().__init__()
