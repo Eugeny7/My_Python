@@ -1,5 +1,7 @@
 import math
 
+from Otus.hw_1.src.figure import Figure
+
 
 class Circle(Figure):
     def __init__(self, radius):
