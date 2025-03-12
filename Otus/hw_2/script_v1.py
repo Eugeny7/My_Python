@@ -1,7 +1,6 @@
 import json
 from copy import copy
 from csv import DictReader
-
 from path_file import FILE_CSV, FILE_JSON
 
 with open(FILE_JSON, 'r') as user_info:
