@@ -240,5 +240,10 @@
 # print(len(x))
 # print(x[2])
 
-for i in range(5):
-    print(i)
+# n = int(input())
+# my_list = sorted([], reverse = True)
+#
+# for i in range(n):
+#     my_list.append(n)
+# print(my_list[1])
+# print(my_list[4])
