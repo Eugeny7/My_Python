@@ -1,3 +1,5 @@
+import json
+
 import requests
 import pprint
 
@@ -17,23 +19,23 @@ class Dog:
     def random_breads(self, end, num):
         url = f'{self.url}/{end}/{num}'
         response = requests.get(url)
-        return response
+        return response.json()
 
     def by_breed(self, bread):
         url = f'{self.url}/breed/{bread}/images'
         response = requests.get(url)
-        return response
+        return response.json()
 
     def sub_breeds(self, bread):
         url = f'{self.url}/breed/{bread}/list'
         response = requests.get(url)
-        return response
+        return response.json()
 
     def sub_breeds_random(self, bread, sub_bread, num):
         url = f'{self.url}/breed/{bread}/{sub_bread}/images/random/{num}'
         response = requests.get(url)
-        return response
+        return response.json()
 
 
 dog = Dog(BASE_URL)
-pprint.pprint(dog.sub_breeds_random('hound','basset', 5))
+pprint.pprint(dog.sub_breeds('spaniel'))
