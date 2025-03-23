@@ -36,6 +36,4 @@ class Dog:
         response = requests.get(url)
         return response.json()
 
-
 dog = Dog(BASE_URL)
-pprint.pprint(dog.sub_breeds('spaniel'))
