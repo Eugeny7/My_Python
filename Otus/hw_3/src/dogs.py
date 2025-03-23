@@ -1,7 +1,4 @@
-import json
-
 import requests
-import pprint
 
 BASE_URL = 'https://dog.ceo/api'
 class Dog:
