@@ -1,6 +1,8 @@
 import requests
 
 BASE_URL = 'https://dog.ceo/api'
+
+
 class Dog:
     def __init__(self, url):
         self.url = url
@@ -32,5 +34,6 @@ class Dog:
         url = f'{self.url}/breed/{bread}/{sub_bread}/images/random/{num}'
         response = requests.get(url)
         return response.json()
+
 
 dog = Dog(BASE_URL)
