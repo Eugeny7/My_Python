@@ -28,3 +28,4 @@ def browser(browser_name):
     else:
         raise ValueError(f'{browser_name} not allowed')
     yield driver
+    driver.quit()
