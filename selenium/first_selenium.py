@@ -1,6 +1,5 @@
 from selenium import webdriver
 import time
-import pytest
 browser = webdriver.Chrome()
 browser.maximize_window()
 browser.get("https://stage.srf.rest/auth/sign-in")

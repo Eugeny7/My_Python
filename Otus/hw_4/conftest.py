@@ -1,10 +1,12 @@
 from selenium import webdriver
 import pytest
 
+BASE_URL = 'http://192.168.0.105:8081'
+
 
 def pytest_addoption(parser):
     parser.addoption('--browser', default='chrome')
-    parser.addoption('--url', action='store', default='http://192.168.0.104:8081')
+    parser.addoption('--url', action='store', default=BASE_URL)
 
 
 @pytest.fixture(scope='session')
