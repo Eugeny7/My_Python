@@ -1,11 +1,8 @@
 
 import pytest
-from selenium.webdriver import ActionChains
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from Otus.hw_4.mainpage import MainPage
-from Otus.hw_4.adminpage import AdminPage
-from Otus.hw_4.registrpage import RegPage
+from Otus.hw_4.src.mainpage import MainPage
+from Otus.hw_4.src.adminpage import AdminPage
+from Otus.hw_4.src.registrpage import RegPage
 
 
 @pytest.mark.smoke

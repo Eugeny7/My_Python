@@ -1,4 +1,4 @@
-from Otus.hw_4.basepage import BasePage
+from Otus.hw_4.src.basepage import BasePage
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 

@@ -1,6 +1,5 @@
-from Otus.hw_4.basepage import BasePage
-from selenium.webdriver import ActionChains
-from selenium.webdriver.support.wait import WebDriverWait
+from Otus.hw_4.src.basepage import BasePage
+
 
 class MainPage(BasePage):
     def __init__(self, browser):

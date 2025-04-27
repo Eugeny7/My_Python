@@ -1,4 +1,4 @@
-from Otus.hw_4.basepage import BasePage
+from Otus.hw_4.src.basepage import BasePage
 
 class RegPage(BasePage):
     def __init__(self, browser):
