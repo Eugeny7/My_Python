@@ -1,7 +1,7 @@
 from selenium import webdriver
 import pytest
 
-BASE_URL = 'http://192.168.0.105:8081'
+BASE_URL = 'http://192.168.0.103:8081'
 
 
 def pytest_addoption(parser):

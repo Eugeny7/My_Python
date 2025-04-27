@@ -1,4 +1,18 @@
-class MainPage:
+from Otus.hw_4.basepage import BasePage
+from selenium.webdriver import ActionChains
+from selenium.webdriver.support.wait import WebDriverWait
+
+class MainPage(BasePage):
+    def __init__(self, browser):
+        super().__init__(browser)
+
+    def open_browser(self, url):
+        self.browser.get(url)
+
+    def get_text(self, selector):
+        return  self.find_element(selector).text
+
+
     DROPDOWN_MY_ACCAUNT = ('xpath', '//a[@class="dropdown-toggle" and @href!="#"]')
     DROPDOWN_CURRENCY = ('xpath', '//a[@class="dropdown-toggle" and @href="#"]')
     INPUT_SEARCH = ('xpath', '//input[@name="search"]')
@@ -13,25 +27,3 @@ class MainPage:
     CURRENCY_Dollar_BUTTON = ('xpath', '//a[@class="dropdown-item" and contains(text(), "Dollar")]')
     CURRENCY_STRONG = ('xpath', '//strong')
 
-
-class AdminPage:
-    OPENCART_LOGIN = 'user'
-    OPENCART_PASSWORD = 'bitnami'
-    DEFAULT_EMAIL_USER = 'user@example.com'
-
-    INPUT_USERNAME = ('xpath', '//input[@id="input-username"]')
-    INPUT_PASSWORD = ('xpath', '//input[@id="input-password"]')
-    BUTTON_SUBMIT = ('xpath', '//button[@type="submit"]')
-    LINK_OPENCART = ('xpath', '//a[text()="OpenCart"]')
-    HEADER_FORM = ('xpath', '//a[text()="OpenCart"]')
-    DROPDOWN_MENU = ('xpath', '//span[@class="d-none d-md-inline d-lg-inline"]')
-    PROFILE_BUTTON = ('xpath', '//a[@class="dropdown-item" and contains(@href, "user_token")]')
-    INPUT_EMAIL = ('xpath', '//input[@id="input-email"]')
-
-
-class RegistrationPage:
-    INPUT_FIRST_NAME = ('xpath', '//input[@id="input-firstname"]')
-    INPUT_LAST_NAME = ('xpath', '//input[@id="input-lastname"]')
-    INPUT_EMAIL = ('xpath', '//input[@id="input-email"]')
-    INPUT_PASSWORD = ('xpath', '//input[@id="input-password"]')
-    BUTTON_CONTINUE = ('xpath', '//button[@type="submit" and text()="Continue"]')

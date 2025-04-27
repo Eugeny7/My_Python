@@ -1,5 +1,10 @@
 import pytest
 
+from Otus.hw_1.src.rectangle import Rectangle
+from Otus.hw_1.src.square import Square
+from Otus.hw_1.src.triangle import Triangle
+from Otus.hw_1.src.сircle import Circle
+
 
 @pytest.mark.parametrize('side_a, side_b, area, perimeter, name',
                          [(5, 10, 50, 30, 'Rectangle')])
