@@ -1,11 +1,11 @@
-
+import allure
 import pytest
 from Otus.hw_4.src.mainpage import MainPage
 from Otus.hw_4.src.adminpage import AdminPage
 from Otus.hw_4.src.registrpage import RegPage
 
 
-@pytest.mark.smoke
+@allure.title('Проверка наличия элементов на главной странице Opencart')
 def test_main_page(browser, url):
     element = MainPage(browser)
     element.open_browser(url)
@@ -15,7 +15,7 @@ def test_main_page(browser, url):
     element.find_element(element.BUTTON_SHOP)
     element.find_element(element.BUTTON_CHECKOUT)
 
-
+@allure.title('Проверка наличия элементов на странице личного кабинета администратора')
 def test_admin_page(browser, url):
     element = AdminPage(browser)
     element.open_browser(url)
@@ -25,6 +25,7 @@ def test_admin_page(browser, url):
     element.find_element(element.BUTTON_SUBMIT)
     element.find_element(element.LINK_OPENCART)
 
+@allure.title('Проверка наличия элементов на странице регистрации Opencart')
 def test_registration_page(browser, url):
     element = RegPage(browser)
     element.open_browser(url)
@@ -35,7 +36,7 @@ def test_registration_page(browser, url):
     element.find_element(element.BUTTON_CONTINUE)
     element.find_element(element.INPUT_FIRST_NAME)
 
-
+@allure.title('Проверка авторизации в личный кабинет администратора')
 def test_admin_login(browser, url):
     element = AdminPage(browser)
     element.open_browser(url)
@@ -48,7 +49,7 @@ def test_admin_login(browser, url):
     user_email = element.get_attribute(element.INPUT_EMAIL)
     assert user_name == element.OPENCART_LOGIN and user_email == element.DEFAULT_EMAIL_USER
 
-
+@allure.title('Проверка добавления товара в корзину на главной странице Opencart ')
 def test_shopping_cart(browser, url):
     element = MainPage(browser)
     element.open_browser(url)
@@ -60,7 +61,7 @@ def test_shopping_cart(browser, url):
     name_item_shopping = element.get_text(MainPage.ITEM_NAME)
     assert name_item_main == name_item_shopping, f'The goods are not consistent'
 
-
+@allure.title('Проверка изменения валюты на главной странице Opencart')
 @pytest.mark.parametrize('currency',
                          [MainPage.CURRENCY_EURO_BUTTON,
                           MainPage.CURRENCY_Dollar_BUTTON,

@@ -1,16 +1,10 @@
 from Otus.hw_4.src.basepage import BasePage
+import allure
 
 
 class MainPage(BasePage):
     def __init__(self, browser):
         super().__init__(browser)
-
-    def open_browser(self, url):
-        self.browser.get(url)
-
-    def get_text(self, selector):
-        return  self.find_element(selector).text
-
 
     DROPDOWN_MY_ACCAUNT = ('xpath', '//a[@class="dropdown-toggle" and @href!="#"]')
     DROPDOWN_CURRENCY = ('xpath', '//a[@class="dropdown-toggle" and @href="#"]')
@@ -26,3 +20,10 @@ class MainPage(BasePage):
     CURRENCY_Dollar_BUTTON = ('xpath', '//a[@class="dropdown-item" and contains(text(), "Dollar")]')
     CURRENCY_STRONG = ('xpath', '//strong')
 
+    def open_browser(self, url):
+        with allure.step('Переход на главную страницу Opencart'):
+            self.browser.get(url)
+
+    def get_text(self, selector):
+        with allure.step('Поиск веб элемента и получение текстовой ноды'):
+            return self.find_element(selector).text
