@@ -247,4 +247,16 @@
 #     my_list.append(n)
 # print(my_list[1])
 # print(my_list[4])
-pass
+# pass
+
+# def count(nums: list) -> list:
+#     nums_two = []
+#     for i in  nums:
+#         if i % 2 != 0:
+#             nums_two.append(i)
+#     return nums_two
+#
+# print(count([1,2,3,4,5]))
+#
+# def students(el: dict) -> str:
+#     return max(el, key=el.get)

@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pytest
 
-BASE_URL = 'http://192.168.0.108:8081'
+BASE_URL = 'http://192.168.0.103:8081'
 
 
 def pytest_addoption(parser):
@@ -24,7 +24,7 @@ def url(request):
 def browser(browser_name):
     if browser_name == 'chrome':
         options = Options()
-        options.add_argument('--headless')
+        # options.add_argument('--headless')
         driver = webdriver.Chrome(options=options)
         # driver.maximize_window()
     elif browser_name == 'safari':

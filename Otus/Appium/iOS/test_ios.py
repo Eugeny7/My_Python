@@ -1,6 +1,9 @@
 from appium.webdriver.common.appiumby import AppiumBy
+from  Otus.Appium.iOS.src import Helper
+import allure
+import pytest
 
-
+@allure.title('Создание события')
 def test_contacts_app(driver):
     driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Automation').click()
     driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'New Automation').click()
@@ -12,3 +15,6 @@ def test_contacts_app(driver):
     input_search.send_keys('Speak Text')
     driver.find_element(AppiumBy.XPATH, '//XCUIElementTypeButton[@name="Speak Text"]').click()
     driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Done').click()
+    element = driver.find_element(AppiumBy.XPATH, '//XCUIElementTypeCell')
+    help = Helper(driver)
+    help.swipe_left_on_element(element, element.size['width'])
