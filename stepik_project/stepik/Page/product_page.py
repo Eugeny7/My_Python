@@ -1,5 +1,7 @@
-from .base_page import BasePage
-from .locators import ProductPageLocators
+
+from stepik_project.stepik.Page.base_page import BasePage
+from stepik_project.stepik.locators import ProductPageLocators
+
 
 class ProductPage(BasePage):
     def add_to_the_basket(self):
@@ -18,4 +20,13 @@ class ProductPage(BasePage):
         price_book_message = self.get_element(ProductPageLocators.PRICE_BOOK_IN_MESSAGE).text
         assert price_book == price_book_message
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(ProductPageLocators.ALERT_MESSAGE_ADD_BASKET), \
+            "Success message is presented, but should not be"
 
+    def should_not_be_element(self):
+        assert self.is_disappeared(ProductPageLocators.ALERT_MESSAGE_ADD_BASKET), \
+            f'The element {ProductPageLocators.ALERT_MESSAGE_ADD_BASKET} did not disappear from the page'
+
+    def go_to_product_page(self):
+        self.get_element(ProductPageLocators.TITLE_ITEM_LINK).click()

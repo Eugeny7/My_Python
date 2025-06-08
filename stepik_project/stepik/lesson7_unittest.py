@@ -1,5 +1,3 @@
-import time
-
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
@@ -32,6 +30,7 @@ class TestAbs(unittest.TestCase):
         self.welcome_text_elt = self.browser.find_element(By.TAG_NAME, "h1").text
         self.assertEqual(self.welcome_text_elt, TEXT, f'{self.welcome_text_elt} НЕ соответствует {TEXT}')
         self.browser.quit()
+
 
 if __name__ == "__main__":
     unittest.main()
