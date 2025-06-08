@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-from stepik_project.stepik.locators import BasePageLocators
+from stepik_project.locators import BasePageLocators
 import math
 
 class BasePage:

@@ -1,8 +1,8 @@
 import pytest
 
-from .Page.base_page import BasePage
-from .Page.basket_page import BasketPage
-from .Page.login_page import LoginPage
+from stepik_project.Page.base_page import BasePage
+from stepik_project.Page.basket_page import BasketPage
+from stepik_project.Page.login_page import LoginPage
 
 
 @pytest.mark.skip

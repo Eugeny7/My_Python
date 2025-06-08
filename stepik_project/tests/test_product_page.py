@@ -1,7 +1,7 @@
 
-from stepik_project.stepik.Page.product_page import ProductPage
-from stepik_project.stepik.Page.base_page import BasePage
-from stepik_project.stepik.Page.basket_page import BasketPage
+from stepik_project.Page.product_page import ProductPage
+from stepik_project.Page.base_page import BasePage
+from stepik_project.Page.basket_page import BasketPage
 import pytest
 
 @pytest.mark.skip

@@ -1,6 +1,6 @@
 
-from stepik_project.stepik.Page.base_page import BasePage
-from stepik_project.stepik.locators import ProductPageLocators
+from stepik_project.Page.base_page import BasePage
+from stepik_project.locators import ProductPageLocators
 
 
 class ProductPage(BasePage):
